@@ -1,0 +1,252 @@
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .carousel,
+  .carousel2,
+  .carousel_brush_color{
+      padding-top: 0px;
+      width: 400px;
+      overflow: hidden;
+      height: 108px;
+      position: relative;
+      left: 50px;
+  }
+  .carousel_brush_color {
+      width: 100px;
+      margin: 0 0 -40px;
+  }
+  
+  .carousel2{
+      height: 160px;
+      left: 45px;
+  }
+  
+  .btnPrevious, .btnNext,
+  .brush_btnPrevious,
+  .brush_btnNext {
+      cursor: pointer;
+      position: relative;
+      top: -75px;
+      left: -200px;
+      width: auto;
+      padding: 16px;
+      color: black;
+      font-size: 18px;
+      transition: 0.1s ease;
+      user-select: none;
+      background: none;
+      border:none;
+  }
+  
+  /* Position the "next button" to the right */
+  .btnNext {
+      left: 200px;
+  }
+  .brush_btnPrevious{
+      left: -20px;
+      top: -30px;
+  }
+  .brush_btnNext {
+      left:  45px;
+      top: -30px;
+  }
+  
+  .carousel ul,
+  .carousel2 ul,
+  .carousel_brush_color ul{
+      position: relative;
+      list-style: none;
+      list-style-type: none;
+      margin: 0;
+      height: 150px;
+      padding: 0;
+  }
+  
+  .carousel ul li,
+  .carousel2 ul li,
+  .carousel_brush_color ul li{
+      height: 80px;
+      width: 80px;
+      float: left;
+      margin-top: 20px;
+      margin-right: 1px;
+      background: #ffffff;
+      text-align: center;
+      padding-bottom: 0px;
+      border-radius:50%;
+  }
+  .carousel2 ul li{
+      width: 140px;
+  }
+  .carousel_brush_color ul li{
+      margin-top: 40px;
+  }
+  
+  .dot {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+  
+  .more-info {
+      font-size: 16px;
+      margin: auto;
+  }
+  
+  /* .carousel ul li .dot{
+      display: block;
+  } */
+  
+  .carousel ul li .more-info {
+      display: none;
+  }
+  
+  .carousel ul li.expanded .color_circle,
+  .carousel_brush_color ul li.expanded .color_circle{
+      border: 2px solid gray;
+  }
+  
+  .carousel ul li.expanded .more-info {
+      display: block;	
+      margin-top: 0px;
+  }
+  
+  .carousel2 ul li.expanded img,
+  .carousel2 ul li.expanded canvas{
+      border: 2px solid black;
+  }
+  
+  .slideshow-container2 {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+  }
+  
+  .btnPrevious2, .btnNext2 {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -25px;
+      padding: 16px;
+      color: black;
+      font-size: 18px;
+      transition: 0.1s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      text-decoration: none;
+  }
+  /* Position the "next button" to the right */
+  .btnNext2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .btnPrevious2 {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .dot2 {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+  
+  .more-info2 {
+      font-size: 16px;
+      margin: auto;
+  }
+  
+  body * {
+      text-align: center;
+  }
+  .first_form_part,
+  .second_form_part, 
+  .third_form_part{
+      width: 500px;
+      display: block;
+      margin: 15px 10px 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+  }
+  .inner_container{
+      width: 380px;
+      margin: -20px auto;
+  }
+  .color_circle{
+      width: 40px;
+      height: 40px;
+      background-color: #b3d9ff;
+      border-radius: 50%;
+      margin: 0 auto;
+  }
+  .form-title{
+      margin: -12px auto;
+      background: white;
+      font-size: 22px;
+      width: fit-content;
+  }
+  #paint_board { 
+      border: 1px solid black; 
+      cursor: crosshair;
+      margin: 16px 0;
+      border-radius: 8px;
+  }
+
+  #pen_1:hover,
+  #pen_2:hover,
+  #pen_3:hover,
+  .pen_selected{
+      border: 1px solid #bbb!important;
+      box-shadow: 1px 1px #bbb!important;
+  }
+  #pen_style{
+      width: 150px;
+      margin-top: 70px;
+      margin-left: 20px;
+      display: inline-block;
+  
+  }
+  .form_title {
+      background: white;
+      margin: -19px auto 5px;
+      width: 100px;
+      font-size: 30px;
+  }
+  .primary_button {
+      background: #54B0B0;
+      border: none;
+      color: white;
+      font-size: 17px;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin: 14px auto 5px;
+      display: block;
+  }
+  .insert1 {
+      margin-top: -80px;
+  }
+  .third_form_part .primary_button{
+      display: inline-block;
+  }
+  .mask-disable{
+      display: none;
+      position: absolute;
+      width: 503px;
+      height: 738px;
+      background: white;
+      opacity: 0.7;
+      top: 0;
+      left: 50%;
+  }
+  @media (min-width: 1000px) {
+      .left_container, 
+      .right_container{
+          display: inline-block;
+          vertical-align: top;
+      }
+  }

@@ -1,0 +1,113 @@
+.range_1 {
+    width: 100px;
+    height: 36px;
+    margin: 100px 0 0 55px;
+    background-image: url("../img/slider_back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 24px;
+}
+.range_1 input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+.range_1 input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.range_1 input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.range_1 input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+} 
+/* //////////////////////////////////styling the thumb/////////////////////////////////////////// */
+/* Special styling for WebKit/Blink */
+.range_1 input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background:#444;
+  cursor: pointer;
+  margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+.range_1 input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.range_1 input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+}
+
+/* //////////////////////////////////range_2/////////////////////////////////////////// */
+
+.range_2 input[type="range"] { 
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 12px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid black;
+}
+
+.range_2 input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 3px;
+  /* border: 2px solid #999; */
+}
+
+
+.range_2 input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 3px;
+  /* border: 3px solid #999;
+  border-radius: 0 !important; */
+  box-sizing: border-box;
+}
+
+.range_2 input[type="range"]::-ms-thumb { 
+  /* border: 2px solid #999; */
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
